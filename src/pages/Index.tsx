@@ -11,14 +11,29 @@ import hotDogImage from "@/assets/hot-dog.jpg";
 import xSaladaImage from "@/assets/x-salada.jpg";
 import xBaconImage from "@/assets/x-bacon.jpg";
 import xEggImage from "@/assets/x-egg.jpg";
+import xTudoImage from "@/assets/x-tudo.jpg";
 import onionRingsImage from "@/assets/onion-rings.jpg";
 import nuggetsImage from "@/assets/nuggets.jpg";
+import wrapFrangoImage from "@/assets/wrap-frango.jpg";
+import clubSandwichImage from "@/assets/club-sandwich.jpg";
+import tirasFrangoImage from "@/assets/tiras-frango.jpg";
 import sucoLaranjaImage from "@/assets/suco-laranja.jpg";
 import milkshakeImage from "@/assets/milkshake.jpg";
 import aguaImage from "@/assets/agua.jpg";
+import cafeImage from "@/assets/cafe.jpg";
+import cafeGeladoImage from "@/assets/cafe-gelado.jpg";
+import smoothieImage from "@/assets/smoothie.jpg";
+import limonadaImage from "@/assets/limonada.jpg";
 import brownieImage from "@/assets/brownie.jpg";
 import sorveteImage from "@/assets/sorvete.jpg";
 import churrosImage from "@/assets/churros.jpg";
+import boloChocolateImage from "@/assets/bolo-chocolate.jpg";
+import waffleImage from "@/assets/waffle.jpg";
+import crepeImage from "@/assets/crepe.jpg";
+import nachosImage from "@/assets/nachos.jpg";
+import palitosQueijoImage from "@/assets/palitos-queijo.jpg";
+import chickenWingsImage from "@/assets/chicken-wings.jpg";
+import batataCheddarBaconImage from "@/assets/batata-cheddar-bacon.jpg";
 
 const Index = () => {
   const menuRef = useRef<HTMLDivElement>(null);
@@ -53,28 +68,34 @@ const Index = () => {
       image: xEggImage,
     },
     {
+      name: "X-Tudo",
+      description: "Duplo hambúrguer, queijo, bacon, ovo, alface, tomate e molho especial",
+      price: 24.90,
+      image: xTudoImage,
+    },
+    {
       name: "Hot Dog Especial",
       description: "Salsicha artesanal, queijo derretido, bacon, milho e batata palha",
       price: 14.90,
       image: hotDogImage,
     },
     {
-      name: "Batata Frita Especial",
-      description: "Batatas rústicas crocantes com mix de temperos da casa",
-      price: 12.50,
-      image: friesImage,
+      name: "Wrap de Frango",
+      description: "Frango grelhado, queijo, alface, tomate e molho caesar no wrap",
+      price: 16.90,
+      image: wrapFrangoImage,
     },
     {
-      name: "Onion Rings",
-      description: "Anéis de cebola empanados e fritos até ficarem dourados",
-      price: 13.90,
-      image: onionRingsImage,
+      name: "Club Sandwich",
+      description: "Peru, bacon, queijo, alface, tomate em pão de forma tostado",
+      price: 17.50,
+      image: clubSandwichImage,
     },
     {
-      name: "Nuggets de Frango",
-      description: "10 unidades de nuggets crocantes com molhos variados",
-      price: 16.50,
-      image: nuggetsImage,
+      name: "Tiras de Frango",
+      description: "6 tiras de frango empanadas crocantes com molhos especiais",
+      price: 15.90,
+      image: tirasFrangoImage,
     },
   ];
 
@@ -103,6 +124,30 @@ const Index = () => {
       price: 3.50,
       image: aguaImage,
     },
+    {
+      name: "Café Expresso",
+      description: "Café expresso cremoso e encorpado",
+      price: 4.50,
+      image: cafeImage,
+    },
+    {
+      name: "Café Gelado",
+      description: "Café gelado com leite e gelo, 400ml",
+      price: 9.90,
+      image: cafeGeladoImage,
+    },
+    {
+      name: "Smoothie de Frutas",
+      description: "Mix de frutas batidas com iogurte - Morango ou frutas vermelhas",
+      price: 11.90,
+      image: smoothieImage,
+    },
+    {
+      name: "Limonada Suíça",
+      description: "Limonada refrescante com raspas de limão e hortelã",
+      price: 7.90,
+      image: limonadaImage,
+    },
   ];
 
   const sobremesas = [
@@ -130,6 +175,69 @@ const Index = () => {
       price: 11.90,
       image: churrosImage,
     },
+    {
+      name: "Bolo de Chocolate",
+      description: "Fatia generosa de bolo de chocolate com cobertura cremosa",
+      price: 10.90,
+      image: boloChocolateImage,
+    },
+    {
+      name: "Waffle Belga",
+      description: "Waffle crocante com calda de chocolate, chantilly e frutas vermelhas",
+      price: 13.90,
+      image: waffleImage,
+    },
+    {
+      name: "Crepe de Nutella",
+      description: "Crepe recheado com Nutella e morangos frescos",
+      price: 12.90,
+      image: crepeImage,
+    },
+  ];
+
+  const porcoes = [
+    {
+      name: "Batata Frita Especial",
+      description: "Batatas rústicas crocantes com mix de temperos da casa",
+      price: 12.50,
+      image: friesImage,
+    },
+    {
+      name: "Batata Cheddar & Bacon",
+      description: "Batatas crocantes cobertas com cheddar derretido e bacon",
+      price: 18.90,
+      image: batataCheddarBaconImage,
+    },
+    {
+      name: "Onion Rings",
+      description: "Anéis de cebola empanados e fritos até ficarem dourados",
+      price: 13.90,
+      image: onionRingsImage,
+    },
+    {
+      name: "Nuggets de Frango",
+      description: "10 unidades de nuggets crocantes com molhos variados",
+      price: 16.50,
+      image: nuggetsImage,
+    },
+    {
+      name: "Nachos Supreme",
+      description: "Nachos crocantes com queijo derretido, carne moída, guacamole e jalapeños",
+      price: 22.90,
+      image: nachosImage,
+    },
+    {
+      name: "Palitos de Queijo",
+      description: "8 palitos de mussarela empanados e fritos com molho marinara",
+      price: 17.90,
+      image: palitosQueijoImage,
+    },
+    {
+      name: "Chicken Wings",
+      description: "10 asinhas de frango crocantes com molho barbecue ou buffalo",
+      price: 24.90,
+      image: chickenWingsImage,
+    },
   ];
 
   return (
@@ -146,9 +254,12 @@ const Index = () => {
           </div>
 
           <Tabs defaultValue="lanches" className="w-full">
-            <TabsList className="mb-8 grid w-full grid-cols-3 bg-muted p-1">
+            <TabsList className="mb-8 grid w-full grid-cols-4 bg-muted p-1">
               <TabsTrigger value="lanches" className="text-base font-semibold">
                 🍔 Lanches
+              </TabsTrigger>
+              <TabsTrigger value="porcoes" className="text-base font-semibold">
+                🍟 Porções
               </TabsTrigger>
               <TabsTrigger value="bebidas" className="text-base font-semibold">
                 🥤 Bebidas
@@ -166,6 +277,19 @@ const Index = () => {
               </div>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {lanches.map((product, index) => (
+                  <ProductCard key={index} {...product} />
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="porcoes" className="mt-0">
+              <div className="mb-4 text-center">
+                <p className="text-sm text-muted-foreground">
+                  {porcoes.length} porções irresistíveis para compartilhar
+                </p>
+              </div>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {porcoes.map((product, index) => (
                   <ProductCard key={index} {...product} />
                 ))}
               </div>
